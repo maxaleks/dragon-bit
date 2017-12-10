@@ -89,9 +89,9 @@ body {
     scrollbar-face-color: #ffc371;
     scrollbar-track-color: #fff;
 }
-img{
+/*img{
     width: 100%
-}
+}*/
 section {
     padding: 100px 0;
 }
@@ -773,8 +773,8 @@ nav.main-navigation .navbar-toggle > span.icon-bar {
     background: rgba(0,0,0, 0.4);
 }
 .showcase .showcase-img:hover .overlay{
-    box-shadow: none;
-    background: transparent;
+    /*box-shadow: none;
+    background: transparent;*/
     cursor: pointer;
 }
 .showcase .showcase-info p{

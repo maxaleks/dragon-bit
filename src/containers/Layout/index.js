@@ -7,15 +7,11 @@ import { Header, Layout as LayoutComponent, Tab } from '../../components/Common'
 const tabs = [
   {
     name: 'Marketplace',
-    path: '/marketplace',
+    path: '/',
   },
   {
     name: 'My Dragons',
     path: '/my-dragons',
-  },
-  {
-    name: 'Home',
-    path: '/',
   },
 ]
 

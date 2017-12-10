@@ -9,8 +9,8 @@ import Fight from './containers/Fight';
 export default ({ dispatch, getState }) => {
   return (
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/marketplace' component={Marketplace} />
+      <Route exact path='/' component={Marketplace} />
+      {/* <Route exact path='/marketplace' component={Marketplace} /> */}
       <Route path='/my-dragons' component={MyDragons} />
       <Route path='/fight/:id' component={Fight} />
       {/* <Route path='/marketplace' component={Marketplace} /> */}

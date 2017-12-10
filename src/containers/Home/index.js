@@ -1,5 +1,6 @@
 import React, { Component, PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import './index.css';
 
@@ -21,9 +22,9 @@ class Home extends Component {
             </div>
             <div className="collapse navbar-collapse" id="navbar">
               <ul className="nav navbar-nav navbar-right">
-                <li><a className="active" href="index.html">Главная</a></li>
-                <li><a href="marketplace.html">Купить дракона</a></li>
-                <li><a href="game.html">Играть</a></li>
+                <Link to='/'>Main</Link>
+                <Link to='/marketplace'>Marketplace</Link>
+                <Link to='/my-dragons'>My Dragons</Link>
               </ul>
             </div>
           </div>
