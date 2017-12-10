@@ -1,0 +1,271 @@
+.cls-1{fill:#9c3;}
+		.cls-3{fill:#690;}
+
+
+@-webkit-keyframes attack {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    background: url("../../../images/models/mouth-attack-2.png") center center no-repeat; } }
+
+@keyframes attack {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    background: url("../../../images/models/mouth-attack-2.png") center center no-repeat; } }
+
+@-webkit-keyframes hit {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3265px; } }
+
+@keyframes hit {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -3265px; } }
+
+html, body, {
+  height: 100%; }
+
+/*{
+  background: url("../../../images/bg.png") center center no-repeat;
+  background-size: cover; }*/
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 40px; }
+  .dragon {
+    position: relative;
+    width: 720px;
+    height: 430px;
+    left: -270px;
+    transform: scale(0.2)}
+    .dragon .body, .dragon .shadow, .dragon img {
+      position: absolute; }
+    .dragon .body {
+      width: 730px;
+      height: 430px;
+      top: 0;
+      left: 0; }
+    .dragon .shadow {
+      top: 8px;
+      left: 8px; }
+    .dragon .horns-back, .dragon .horns-front {
+      position: absolute; }
+    .dragon .horns-back {
+      top: -58px;
+      left: 81px; }
+    .dragon .horns-front {
+      top: -55px;
+      left: 62px; }
+    .dragon .eye-back, .dragon .eye-front {
+      position: absolute; }
+    .dragon .eye-back {
+      top: 158px;
+      right: -46px; }
+    .dragon .eye-front {
+      top: 144px;
+      right: 25px; }
+    .dragon .wing-back, .dragon .wing-front {
+      position: absolute; }
+    .dragon .wing-back {
+      width: 256px;
+      height: 306px;
+      top: -113px;
+      left: 290px; }
+      .dragon .wing-back_bottom {
+        position: absolute;
+        width: 270px;
+        height: 147px;
+        top: 135px;
+        left: 305px; }
+    .dragon .wing-front {
+      width: 285px;
+      height: 306px;
+      top: -109px;
+      left: 204px; }
+      .dragon .wing-front_center {
+        position: absolute;
+        width: 300px;
+        height: 148px;
+        top: 50px;
+        left: 189px; }
+      .dragon .wing-front_bottom {
+        position: absolute;
+        width: 245px;
+        height: 373px;
+        top: 171px;
+        left: 266px; }
+      .dragon .wing-front_up {
+        position: absolute;
+        width: 274px;
+        height: 245px;
+        top: 171px;
+        left: 216px; }
+    .dragon .mouth {
+      position: absolute;
+      top: 284px;
+      right: 0; }
+      .dragon .mouth-attack {
+        position: absolute;
+        top: 206px;
+        right: -212px;
+        width: 276px;
+        height: 222px;
+        background: url("../../../images/models/mouth-attack-1.png") center center no-repeat;
+        display: none;
+        -webkit-transform-origin: center left;
+        -ms-transform-origin: center left;
+        transform-origin: center left; }
+        .dragon .mouth-attack img {
+          top: -172px;
+          left: 120px;
+          -webkit-transition: left 2s;
+          transition: left 2s; }
+    .dragon.attack .mouth {
+      display: none; }
+    .dragon.attack .mouth-attack {
+      -webkit-animation: attack 1s 1 forwards;
+      animation: attack 1s 1 forwards;
+      display: block; }
+    .dragon.attack .mouth-attack img {
+      left: 800px; }
+    .dragon .explode {
+      width: 653px;
+      height: 616px;
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-image: url("../../../images/models/explode.png");
+      display: none; }
+    .dragon.hit .explode {
+      -webkit-animation: hit 1s steps(5) forwards;
+      animation: hit 1s steps(5) forwards;
+      display: block; }
+    .dragon .stomach {
+      top: 235px;
+      right: 165px; }
+    .dragon#position-1 .wing-back, .dragon#position-1 .wing-front {
+      display: block; }
+    .dragon#position-1 .wing-back_bottom, .dragon#position-1 .wing-front_center, .dragon#position-1 .wing-front_bottom, .dragon#position-1 .wing-front_up {
+      display: none; }
+    .dragon#position-2 .wing-front_center {
+      display: block; }
+    .dragon#position-2 .wing-back, .dragon#position-2 .wing-front, .dragon#position-2 .wing-back_bottom, .dragon#position-2 .wing-front_bottom, .dragon#position-2 .wing-front_up {
+      display: none; }
+    .dragon#position-3 .wing-back_bottom, .dragon#position-3 .wing-front_bottom {
+      display: block; }
+    .dragon#position-3 .wing-back, .dragon#position-3 .wing-front, .dragon#position-3 .wing-front_center, .dragon#position-3 .wing-front_up {
+      display: none; }
+    .dragon#position-4 .wing-front_up {
+      display: block; }
+    .dragon#position-4 .wing-back_bottom, .dragon#position-4 .wing-front_center, .dragon#position-4 .wing-front_bottom, .dragon#position-4 .wing-back, .dragon#position-4 .wing-front {
+      display: none; }
+    .dragon.revert {
+      -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+  .cls-2 {
+    fill: none;
+    stroke: #231f20;
+    stroke-width: 16px; }
+  .cls-4 {
+    fill: #231f20; }
+
+@-webkit-keyframes fly1 {
+  0% {
+    top: 0; }
+  34% {
+    top: -5px; }
+  56% {
+    top: 2px; }
+  72% {
+    top: 4px; }
+  86% {
+    top: 3px; }
+  91% {
+    top: 1px; } }
+
+@keyframes fly1 {
+  0% {
+    top: 0; }
+  34% {
+    top: -5px; }
+  56% {
+    top: 2px; }
+  72% {
+    top: 4px; }
+  86% {
+    top: 3px; }
+  91% {
+    top: 1px; } }
+
+.dragon:hover {
+  -webkit-animation: fly1 .6s infinite;
+  animation: fly1 .6s infinite; }
+
+@-webkit-keyframes fly2 {
+  0% {
+    top: 0; }
+  34% {
+    top: -10px; }
+  56% {
+    top: 4px; }
+  72% {
+    top: 8px; }
+  86% {
+    top: 5px; }
+  91% {
+    top: 2px; } }
+
+@keyframes fly2 {
+  0% {
+    top: 0; }
+  34% {
+    top: -10px; }
+  56% {
+    top: 4px; }
+  72% {
+    top: 8px; }
+  86% {
+    top: 5px; }
+  91% {
+    top: 2px; } }
+
+.two {
+  -webkit-animation: fly2 .6s .4s infinite;
+  animation: fly2 .6s .4s infinite; }
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/

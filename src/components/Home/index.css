@@ -1,0 +1,31 @@
+.jackpot {
+  margin-top: 50px;
+  align-self: center;
+  font-size: 30px;
+  font-weight: bold; }
+  .jackpot .jackpot-title {
+    color: red;
+    text-transform: uppercase; }
+
+.ticket-info {
+  margin-top: 50px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 300px;
+  height: 100px;
+  padding: 10px; }
+
+.ticket-price {
+  font-size: 20px; }
+
+.available-tickets {
+  font-size: 20px; }
+
+.buy-ticket {
+  width: 120px;
+  align-self: center;
+  margin-top: 40px; }
